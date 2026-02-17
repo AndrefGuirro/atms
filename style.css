@@ -1,0 +1,37 @@
+
+body {
+    background-color: black;
+    font-family: "Arial", sans-serif;
+}
+
+/* Logo */
+.logo {
+    width: 180px;
+    max-width: 60%;
+}
+
+/* Título e Subtítulo */
+h1 {
+    color: white;
+    font-weight: bold;
+}
+.subtitulo {
+    color: #555;
+}
+
+/* Botões personalizados da Infoss */
+.btn-infoss {
+    background-color: #a618df;
+    color: #fff;
+    max-width: 350px;
+}
+
+.btn-infoss:hover {
+    background-color: #00368a;
+    color: #fff;
+}
+
+.footer a {
+    color: white;
+}
+
