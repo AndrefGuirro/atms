@@ -12,20 +12,61 @@
 </head>
 <body>
 
-<header class="text-center mt-5">
-    <img src="assets/logo-infoss.png" alt="Logo Infoss" class="logo">
-    <h1 class="mt-3">Sistemas de Demonstração</h1>
-    <p class="subtitulo">Escolha o Atm do segmento ou abrir ticket Suporte</p>
+<header class="top-banner">
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <!-- Nome / Logo clicável -->
+        <a href="https://www.infoss.com.br" target="_blank" class="brand-infoss">
+            Infoss
+        </a>
+    </div>
 </header>
+
+
+<h1>Sistemas Totem de Demonstração</h1>
+<p class="subtitulo">Clique nos botões abaixo para acessar os sistemas de demonstração da Infoss ou abrir ticket de suporte .</p>
+
 
 <main class="container d-flex flex-column align-items-center gap-3 mt-4">
 
     <!-- Botões dos Sistemas -->
-    <a href="https://atm.infoss.com.br/barber?tid=5000" class="btn btn-infoss btn-lg w-75 rounded-pill">ATM Barber</a>
-    <a href="https://atm.infoss.com.br/food/?tid=10000" class="btn btn-infoss btn-lg w-75 rounded-pill">ATM Food</a>
-    <a href="https://atm.infoss.com.br/shop?tid=5000" class="btn btn-infoss btn-lg w-75 rounded-pill">ATM Restaurante</a>
-    <a href="https://atm.infoss.com.br/pharma?tid=5000" class="btn btn-infoss btn-lg w-75 rounded-pill">ATM Pharma</a>
-    <a href="https://infosschefe.infoss.com.br/painel" class="btn btn-infoss btn-lg w-75 rounded-pill">Painel food</a>
+    <a href="https://atm.infoss.com.br/barber?tid=5000" class="btn btn-infoss btn-lg w-75 rounded-pill"  target="_blank"
+   rel="noopener noreferrer">ATM Barber</a>
+    <a href="https://atm.infoss.com.br/food/?tid=10000" class="btn btn-infoss btn-lg w-75 rounded-pill"  target="_blank"
+   rel="noopener noreferrer">ATM Food</a>
+    <a href="https://atm.infoss.com.br/shop?tid=5000" class="btn btn-infoss btn-lg w-75 rounded-pill"  target="_blank"
+   rel="noopener noreferrer">ATM Restaurante</a>
+    <a href="https://atm.infoss.com.br/pharma?tid=5000" class="btn btn-infoss btn-lg w-75 rounded-pill"  target="_blank"
+   rel="noopener noreferrer"  target="_blank"
+   rel="noopener noreferrer">ATM Pharma</a>
+    
+    <div class="card-login-demo text-center">
+
+    <a href="https://infosschefe.infoss.com.br/painel" 
+       class="btn btn-infoss btn-lg w-75 rounded-pill"
+       target="_blank"
+       rel="noopener noreferrer">
+        Painel Chef
+    </a>
+
+    <div class="login-info mt-3">
+
+        <p class="login-text">Login:</p>
+        <div class="copy-box">
+            <span id="loginText">comercial@infoss.com.br</span>
+            <button onclick="copiarTexto('loginText')" class="btn-copy">Copiar</button>
+        </div>
+
+        <p class="login-text mt-2">Senha:</p>
+        <div class="copy-box">
+            <span id="senhaText">comercial123</span>
+            <button onclick="copiarTexto('senhaText')" class="btn-copy">Copiar</button>
+        </div>
+
+    </div>
+
+</div>
+
     <a href="http://suporte.infoss.com.br/" class="btn btn-infoss btn-lg w-75 rounded-pill">Ticket Suporte</a>
 
 </main>
@@ -36,6 +77,13 @@
 
 <!-- Bootstrap JS Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function copiarTexto(id) {
+    const texto = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(texto);
+}
+</script>
+
 
 </body>
 </html>
