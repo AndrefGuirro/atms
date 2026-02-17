@@ -47,7 +47,7 @@ h1 {
     margin-top: 50px;
     text-align: center;
 }
-.subtitulo {
+.subtitulo, h3 {
     color: #555;
     text-align: center;
 }

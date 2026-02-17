@@ -24,52 +24,80 @@
 
 
 <h1>Sistemas Totem de Demonstração</h1>
+<h3>Abra em janela anônima para melhor experiência</h3>
 <p class="subtitulo">Clique nos botões abaixo para acessar os sistemas de demonstração da Infoss ou abrir ticket de suporte .</p>
 
 
-<main class="container d-flex flex-column align-items-center gap-3 mt-4">
 
-    <!-- Botões dos Sistemas -->
-    <a href="https://atm.infoss.com.br/barber?tid=5000" class="btn btn-infoss btn-lg w-75 rounded-pill"  target="_blank"
-   rel="noopener noreferrer">ATM Barber</a>
-    <a href="https://atm.infoss.com.br/food/?tid=10000" class="btn btn-infoss btn-lg w-75 rounded-pill"  target="_blank"
-   rel="noopener noreferrer">ATM Food</a>
-    <a href="https://atm.infoss.com.br/shop?tid=5000" class="btn btn-infoss btn-lg w-75 rounded-pill"  target="_blank"
-   rel="noopener noreferrer">ATM Restaurante</a>
-    <a href="https://atm.infoss.com.br/pharma?tid=5000" class="btn btn-infoss btn-lg w-75 rounded-pill"  target="_blank"
-   rel="noopener noreferrer"  target="_blank"
-   rel="noopener noreferrer">ATM Pharma</a>
-    
-    <div class="card-login-demo text-center">
+<main class="container-fluid mt-4">
 
-    <a href="https://infosschefe.infoss.com.br/painel" 
-       class="btn btn-infoss btn-lg w-75 rounded-pill"
-       target="_blank"
-       rel="noopener noreferrer">
-        Painel Chef
-    </a>
+<div class="row justify-content-center">
 
-    <div class="login-info mt-3">
+    <!-- COLUNA ESQUERDA - ATMs -->
+    <div class="col-12 col-md-6 d-flex flex-column align-items-center gap-3">
 
-        <p class="login-text">Login:</p>
-        <div class="copy-box">
-            <span id="loginText">comercial@infoss.com.br</span>
-            <button onclick="copiarTexto('loginText')" class="btn-copy">Copiar</button>
+        <a href="https://atm.infoss.com.br/barber?tid=5000"
+           class="btn btn-infoss btn-lg w-75 rounded-pill"
+           target="_blank">ATM Barber</a>
+
+        <a href="https://atm.infoss.com.br/food/?tid=10000"
+           class="btn btn-infoss btn-lg w-75 rounded-pill"
+           target="_blank">ATM Food</a>
+
+        <a href="https://atm.infoss.com.br/shop?tid=5000"
+           class="btn btn-infoss btn-lg w-75 rounded-pill"
+           target="_blank">ATM Restaurante</a>
+
+        <a href="https://atm.infoss.com.br/pharma?tid=5000"
+           class="btn btn-infoss btn-lg w-75 rounded-pill"
+           target="_blank">ATM Pharma</a>
+
+    </div>
+
+
+    <!-- COLUNA DIREITA -->
+    <div class="col-12 col-md-6 d-flex flex-column align-items-center gap-3 mt-3 mt-md-0">
+
+        <!-- CARD CHEF -->
+        <div class="card-login-demo text-center">
+
+            <a href="https://infosschefe.infoss.com.br/painel"
+               class="btn btn-infoss btn-lg w-75 rounded-pill"
+               target="_blank">
+                Painel Chef
+            </a>
+
+            <div class="login-info mt-3">
+
+                <p class="login-text">Login:</p>
+                <div class="copy-box">
+                    <span id="loginText">comercial@infoss.com.br</span>
+                    <button onclick="copiarTexto('loginText')" class="btn-copy">Copiar</button>
+                </div>
+
+                <p class="login-text mt-2">Senha:</p>
+                <div class="copy-box">
+                    <span id="senhaText">comercial123</span>
+                    <button onclick="copiarTexto('senhaText')" class="btn-copy">Copiar</button>
+                </div>
+
+            </div>
+
         </div>
 
-        <p class="login-text mt-2">Senha:</p>
-        <div class="copy-box">
-            <span id="senhaText">comercial123</span>
-            <button onclick="copiarTexto('senhaText')" class="btn-copy">Copiar</button>
-        </div>
+
+        <!-- SUPORTE -->
+        <a href="http://suporte.infoss.com.br/"
+           class="btn btn-infoss btn-lg w-75 rounded-pill">
+           Ticket Suporte
+        </a>
 
     </div>
 
 </div>
 
-    <a href="http://suporte.infoss.com.br/" class="btn btn-infoss btn-lg w-75 rounded-pill">Ticket Suporte</a>
-
 </main>
+
 
 <footer class="footer-infoss">
     <p style="margin: 0;">
